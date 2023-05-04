@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #ee7752, #23a6d5, #3f4040);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 10% !important;
+  /*EFECTO MAQUINA DE ESCRIBIR*/
+  display: block;
+  border-right: 4px solid;
+  width: 9ch;
+  white-space: nowrap;
+  animation: typing 5s steps(8), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+  text-decoration: underline;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.gif {
+  margin-top: 10%;
+  border-radius: 20px;
+  opacity: 0.9;
+}
